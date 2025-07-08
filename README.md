@@ -10,7 +10,7 @@ Develop a premium fashion platform for personalized men's tailoring and customer
 
 Platform: Salesforce  
 Complexity: Medium  
-Duration: 30 mins  
+Duration: 17 Hours 
 
 ---
 
@@ -26,14 +26,10 @@ Duration: 30 mins
 | Object Name | Description |
 |---------------------|----------------------------------------|
 | `Customer__c` | Stores customer details |
-| `Measurement__c` | Body measurements linked to customer |
 | `Order__c` | Tailoring order and status tracking |
-| `Stylist__c` | Records stylist information |
-| `Recommendation__c` | Style suggestions for customers |
 
  Relationships
 
-- One `Customer__c` → many `Measurement__c`
 - One `Customer__c` → many `Order__c`
 - One `Stylist__c` → many `Recommendation__c`
 
@@ -41,11 +37,9 @@ Duration: 30 mins
 
  Flows Used
 
-- **Order Confirmation Flow**  
+Order Confirmation Flow 
   Sends email when an order is placed.
 
-- **Styling Suggestion Flow**  
-  Recommends outfits based on customer preferences.
 
  How to Use
 
@@ -58,4 +52,4 @@ Duration: 30 mins
 ---
 Acknowledgements
 
-Built as part of the **SkillWallet Salesforce Developer Virtual Internship Project**.
+Built as part of the SkillWallet Salesforce Developer Virtual Internship Project.
