@@ -1,25 +1,61 @@
-HandsMen Threads, a dynamic organization in the fashion industry, is embarking on a Salesforce project designed to revolutionize their data management and enhance customer relations. The project involves building a robust data model tailored to store all pertinent business data, ensuring a seamless flow of information across the organization.
+ HandsMen Threads - Salesforce Project
 
-A key aspect of this project is the maintenance of data integrity directly from the user interface (UI). This feature will safeguard the accuracy and consistency of the data, which is crucial for informed decision-making and reliable business operations.The project will integrate several new processes into the business workflow to improve customer service and operational efficiency:
+A custom Salesforce app to streamline men's bespoke tailoring and enhance the customer experience through personalized styling and seamless order management.
 
-Automated Order Confirmations: Post-order confirmation, customers will receive an email update, fostering engagement and strengthening customer relations.
 
-Dynamic Loyalty Program: Customer loyalty statuses will be updated based on purchase history, enabling personalized rewards and promoting repeat business.
+ Project Overview
 
-Proactive Stock Alerts: When stock levels drop below five units, automatic emails will notify the warehouse team, ensuring timely restocking and preventing stockouts.
+Use Case:  
+Develop a premium fashion platform for personalized men's tailoring and customer order tracking.
 
-Scheduled Bulk Order Updates: Daily midnight, the system will process bulk orders, updating financial records and adjusting inventory, ensuring accurate stock levels for daily operations.
+Platform: Salesforce  
+Complexity: Medium  
+Duration: 30 mins  
 
-What you'll learn : 
+---
 
-Data Modelling
+ Objectives
 
-Data Quality
+- Allow customers to input their measurements
+- Track tailored clothing orders
+- Enable stylists to assign recommendations
+- Automate order confirmations and delivery tracking using Salesforce Flows
 
-Lightning App Builder 
+ Data Model
 
-Record Triggered Flows
+| Object Name | Description |
+|---------------------|----------------------------------------|
+| `Customer__c` | Stores customer details |
+| `Measurement__c` | Body measurements linked to customer |
+| `Order__c` | Tailoring order and status tracking |
+| `Stylist__c` | Records stylist information |
+| `Recommendation__c` | Style suggestions for customers |
 
-Apex and Apex Triggers
+ Relationships
 
-Asynchronous Apex
+- One `Customer__c` → many `Measurement__c`
+- One `Customer__c` → many `Order__c`
+- One `Stylist__c` → many `Recommendation__c`
+
+---
+
+ Flows Used
+
+- **Order Confirmation Flow**  
+  Sends email when an order is placed.
+
+- **Styling Suggestion Flow**  
+  Recommends outfits based on customer preferences.
+
+ How to Use
+
+1. Clone this repo or use as reference.
+2. Create a Salesforce Developer Org.
+3. Set up custom objects and relationships.
+4. Build Flows using Flow Builder.
+5. Deploy the app and test with sample data.
+
+---
+Acknowledgements
+
+Built as part of the **SkillWallet Salesforce Developer Virtual Internship Project**.
